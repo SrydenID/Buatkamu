@@ -1,0 +1,68 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --main-background: black;
+  --main-fonts-color: #fff;
+  --main-decor-color: #00a9e2;
+  --main-header-background: #21252e;
+  --main-font-family: "Poppins", sans-serif;
+}
+body {
+  background: var(--main-header-background);
+  padding-top: 4em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Hbd {
+  color: var(--main-fonts-color);
+  font-family: var(--main-fonts-color);
+  overflow: hidden;
+  border-right: 0.15em solid var(--main-decor-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end), Blink_caret 0.5s step-end infinite;
+}
+.desc {
+  color: var(--main-fonts-color);
+  font-family: var(--main-fonts-color);
+  overflow: hidden;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  text-align: center;
+}
+.wyatb {
+  color: var(--main-fonts-color);
+  font-family: var(--main-fonts-color);
+  overflow: hidden;
+  border-right: 0.15em solid var(--main-decor-color);
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end), Blink_caret 0.5s step-end infinite;
+}
+button {
+  justify-content: center;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes Blink_caret {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--main-decor-color);
+  }
+}
